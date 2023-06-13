@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="design.css" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="Lawsinfo (1).png" alt="">
+  </div>
+
+    <input type="checkbox" name="toggle" id="toggle-check">
+    <label for="toggle-check" class="toggle-menu">
+      <!-- <span class="hamburger-menu">&#9776</span> -->
+      <span class="hamburger-menu"></span>
+    </label>
+
+    <nav class="navbar">
+      <ul>
+        <li><a id="important" href="index.html">legal Issues</a></li>
+        <li><a href="newlaws.html">Articles</a></li>
+        <li><a href="hire.html">Hire a lawyer!</a></li>
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="whole">
+    <div class="upper">
+      <div class="container">
+
+
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Hire a lawyer!</h3>
+            <p class="text">
+              To hire a Lawyer Contact us on any social media account mentioned here
+              or whatsapp us on given contact number.
+
+            </p>
+
+            <div class="info">
+              <div class="information">
+                <img src="img/location.png" class="icon" alt="" />
+                <p>Meerut</p>
+              </div>
+              <div class="information">
+                <img src="img/email.png" class="icon" alt="" />
+                <p>lawsinfo22@gmail.com</p>
+              </div>
+              <div class="information">
+                <img src="img/phone.png" class="icon" alt="" />
+                <p>+91-7535982028</p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form action="connect.php" method="post">
+              <h3 class="title">Contact Us Here!</h3>
+              <div class="input-container">
+                <input type="text" name="username" class="input" placeholder="username" id="Fname" required/>
+
+
+              </div>
+              <div class="input-container">
+                <input type="email" name="email"  class="input" placeholder="email" id="Femail" required/>
+
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" placeholder="phone" id="Fphone" required />
+
+                </div>
+                <div class="input-container textarea">
+                  <textarea  class="input" name="message" placeholder="for publish article,hire a lawyer or other message " id="Fmessage"></textarea>
+
+                </div>
+                <button type="submit" name="button" value="send email" class="btn" id="btnn" onclick="sendemail()">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="lower">
+      <div class="footer_section">
+
+        <!--======================================= FOOTER TOP SECTION START =========================== -->
+        <div class="subscriber_head">
+
+          <h1 id="free_daily_updates">Free Daily Updates</h1>
+
+
+          <form action="" class="subscriber_search_box" method="get">
+
+            <input class="subscriber_search_bar" type="text" placeholder="subscribe  ">
+
+
+            <button class="subscriber_button" type="submit">Subscribe</button>
+          </form>
+
+        </div>
+
+
+        <!--======================================= FOOTER TOP SECTION ENDS =========================== -->
+
+        <!--======================================= FOOTER MID SECTION START =========================== -->
+
+        <div class="subscriber_mid">
+
+          <div class="first_para">
+            <div class="footer_logo">
+              <h1>Lawsinfo</h1>
+            </div>
+            <div class="footer_para">
+
+              <h3 id="footer_first_head">Know your Rights and Laws </h3>
+              <br>
+
+              <h5>
+                lawsinfo22@gmail.com</h5>
+              <h5>www.lawsinfo.com</h5>
+
+            </div>
+
+
+          </div>
+
+
+
+          <div class="vertical2"></div>
+          <div class="horizontal"></div>
+          <div class="middle_para">
+
+            <div class="footer_About">
+              <h4 class="footer_About_para"><a class="footer_About_head" href="">Useful links</a></h5>
+                <h5 class="footer_About_para"><a class="footer_About_links"
+                    href="about.html">About us</a></h5>
+                <h5 class="footer_About_para"><a class="footer_About_links" href="">Our Team</a></h5>
+
+
+
+            </div>
+
+            <div class="footer_About">
+              <h4 class="footer_About_para"><a class="footer_About_head" href="#">Contact</a></h5>
+                <h5 class="footer_About_para"><a class="footer_About_links"
+                    href="hire.html">Contact-us</a></h5>
+                <h5 class="footer_About_para"><a class="footer_About_links" href="">Privacy Policy</a></h5>
+
+            </div>
+
+            <div class="footer_About">
+              <h4 class="footer_About_para"><a class="footer_About_head" href="#">What's New</a></h5>
+                <h5 class="footer_About_para"><a class="footer_About_links"
+                    href="newlaws.html">Articles</a></h5>
+                <h5 class="footer_About_para"><a class="footer_About_links"
+                    href="index.html">legal issues</a></h5>
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+
+          <div class="vertical"></div>
+          <div class="horizontal2"></div>
+
+          <div class="last_para">
+
+            <div class="footer_last">
+
+
+            </div>
+
+            <div class="contacts">
+              <h4>Connect:
+
+              </h4>
+              <div class="icon_section">
+                <a class="footer_mid_icons" href=""><i class="fab fa-twitter footer_mid_icons_inner"></i></a>
+                <a class="footer_mid_icons" href=""><i class="fab fa-instagram footer_mid_icons_inner"></i></a>
+                <a class="footer_mid_icons" href=""><i class="fab fa-linkedin footer_mid_icons_inner"></i></a>
+                <a class="footer_mid_icons" href=""><i class="fab fa-youtube footer_mid_icons_inner"></i></a>
+                <a class="footer_mid_icons" href=""><i class="fab fa-twitter footer_mid_icons_inner"></i></a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div class="copy">
+          <p>© 2023 LawsInfo. All rights reserved.</p>
+        </div>
+        <!--======================================= FOOTER MID SECTION ENDS =========================== -->
+
+        <!--======================================= FOOTER LAST SECTION START =========================== -->
+
+        <!--======================================= FOOTER LAST SECTION ENDS =========================== -->
+
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+   var form = document.getElementById('form')
+    form.addEventListener('submit', function(event){
+      event.preventDefault()
+      
+      var name = document.getElementById('Fname').value;
+      console.log(name)
+      var email = document.getElementById('Femail').value;
+      console.log(email)
+      var phone = document.getElementById('Fphone').value;
+      console.log(phone)
+      var message = document.getElementById('Fmessage').value;
+      console.log(message)
+      
+      
+
+
+    });
+
+    function sendemail(){
+
+      var name = document.getElementById('Fname').value
+      
+      var email = document.getElementById('Femail').value
+     
+      var phone = document.getElementById('Fphone').value
+      
+      var message = document.getElementById('Fmessage').value
+     
+
+
+
+      Email.send({
+    SecureToken: "447788d3-83f2-4551-8c0f-72e3b99e5f99",
+    To: 'lawsinfo22@gmail.com',
+    From: Femail.value,
+    Subject: "enquiry",
+    Body:"Message From: " + Fname.value + "<br>" + "Phone Number: " + Fphone.value + "<br>" + "Message is : " + "<br>" + Fmessage.value
+  }).then(message => alert("Form Submitted Successfully!")
+  );
+    }
+   
+    </script> -->
+    
+ 
+
+
+
+</body>
+
+</html>
